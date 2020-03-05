@@ -1,18 +1,12 @@
-function palin() {
-    var a, no, b, temp = 0;
-
-    no = Number(document.getElementById("no_input").value);
-
-    b = no;
-    while (no > 0) {
-        a = no % 10;
-        no = parseInt(no / 10);
-        temp = temp * 10 + a;
-    }
-    if (temp == b) {
-        document.getElementById("result").innerHTML = "Palindrome number";
-    }
-    else {
-        document.getElementById("result").innerHTML = "Not Palindrome number";
-    }
+function palindrome(){
+revString= "";
+inpString= document.getElementById("text").value;
+i=inpString.length;
+for(var j=i; j>=0; j--){
+    revString = revString+inpString.charAt(j);
+}
+if(revString == inpString)
+        document.getElementById("result").innerHTML = "String is a pallindrome";
+    else
+        document.getElementById("result").innerHTML = "String is not a pallindrome";
 }
