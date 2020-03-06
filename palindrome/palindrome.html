@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body {
+        min-height: 100%;
+        }
+       
+        h1 {
+        position: absolute;
+        margin: 0;
+        font-size: 32px;
+        color: #fff;
+        z-index: 2;
+        }
+       
+        .banner {
+        position: relative;
+        height: 210px;
+        background-image: url("./images/abc.jpeg");  
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+        .banner::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5); 
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+        .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      
+      
+      </style>
+</head>
+        
+<body>
+        <div class="banner">
+                <h1>check whether it is palindrome or not</h1>
+              </div>
+              <br></br>
+                         <center> Enter any word:<input type="text" id="text"><br></br>
+                            <div class="btn-block"> <input type="submit" value="Check" onclick="palindrome()"></br></br></div>
+                            <hr color="cyan"><br></br>
+    <span id="result"></span></center>
+    <script src="palindrome-script/palindrome.js"></script>
+</body>
+</html>
