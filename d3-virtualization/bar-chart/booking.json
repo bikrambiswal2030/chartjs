@@ -1,0 +1,30 @@
+[
+    {
+        "year": 2014,
+        "booking": 900
+    },
+    {
+        "year": 2015,
+        "booking": 200
+    },
+    {
+        "year": 2016,
+        "booking": 600
+    },
+    {
+        "year": 2017,
+        "booking": 2200
+    },
+    {
+        "year": 2018,
+        "booking": 1200
+    },
+    {
+        "year": 2019,
+        "booking": 1800
+    },
+    {
+        "year": 2020,
+        "booking": 1500
+    }
+]
