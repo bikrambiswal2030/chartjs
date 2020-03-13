@@ -1,23 +1,22 @@
-[
-    {
+[{
         "year": 2014,
-        "booking": 150
-    },
-    {
-        "year": 2015,
         "booking": 200
     },
     {
+        "year": 2015,
+        "booking": 150
+    },
+    {
         "year": 2016,
-        "booking": 120
+        "booking": 250
     },
     {
         "year": 2017,
-        "booking": 300
+        "booking": 100
     },
     {
         "year": 2018,
-        "booking": 250
+        "booking": 300
     },
     {
         "year": 2019,
@@ -25,6 +24,6 @@
     },
     {
         "year": 2020,
-        "booking": 200
+        "booking": 350
     }
 ]
