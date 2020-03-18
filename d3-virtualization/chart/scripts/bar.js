@@ -15,7 +15,7 @@ const drawBar = (
     .append("rect")
     .attr("width", barWidth)
     .attr("height", (d) => barMaxHeight - yScale(d[yScaleAttrName]))
-    .attr("fill", "#f4c430")
+    .attr("fill", "orange")
     .attr("x", (d) => xScale(d[xScaleAttrName]))
     .attr("y", (d) => yScale(d[yScaleAttrName]));
 };
