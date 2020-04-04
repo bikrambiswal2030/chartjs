@@ -1,4 +1,6 @@
-const drawPie = (pieArg) => {
+import * as d3 from "d3";
+
+export const drawPie = (pieArg) => {
   const pie = d3.pie()(pieArg.pieData.map((d) => d.yAxis));
 
   var path = d3

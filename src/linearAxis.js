@@ -1,16 +1,18 @@
-const drawLinearAxis = (arg) => {
+import * as d3 from "d3";
+
+export const drawLinearAxis = lineArg => {
   const scale = d3
     .scaleLinear()
-    .domain([arg.domainMin, arg.domainMax])
-    .range([arg.rangeMin, arg.rangeMax]);
+    .domain([lineArg.domainMin, lineArg.domainMax])
+    .range([lineArg.rangeMin, lineArg.rangeMax]);
 
-  const group = arg.parentGroup.append("g");
+  const group = lineArg.parentGroup.append("g");
 
   var axis;
 
-  if (arg.type === "bar") {
+  if (lineArg.type === "bar") {
     axis = d3.axisBottom(scale);
-    group.attr("transform", `translate(0,${arg.height})`);
+    group.attr("transform", `translate(0,${lineArg.height})`);
   } else {
     axis = d3.axisLeft(scale);
   }

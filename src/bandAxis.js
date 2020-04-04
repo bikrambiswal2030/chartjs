@@ -1,4 +1,6 @@
-const drawBandAxis = (bandArg) => {
+import * as d3 from "d3";
+
+export const drawBandAxis = bandArg => {
   const scale = d3
     .scaleBand()
     .domain(bandArg.domainArr)

@@ -1,4 +1,8 @@
-const drawBar = (barArg) => {
+import * as d3 from "d3";
+import { drawBandAxis } from "./bandAxis.js";
+import { drawLinearAxis } from "./linearAxis.js";
+
+export const drawBar = (barArg) => {
   const yScale = drawBandAxis({
     type: barArg.type,
     domainArr: barArg.data.map((d) => d.yAxis),

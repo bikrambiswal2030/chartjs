@@ -1,4 +1,10 @@
-const draw = (data) => {
+import * as d3 from "d3";
+import { drawBar } from "./bar.js";
+import { drawLine } from "./line.js";
+import { drawPie } from "./pie.js";
+import { drawColumn } from "./column.js";
+
+export const drawGraph = (data) => {
   const margin = {
     top: data.top,
     right: data.right,
@@ -21,7 +27,7 @@ const draw = (data) => {
     .attr("height", graphHeight)
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-  dataSorted = data.value.sort((a, b) => d3.ascending(a.xAxis, b.xAxis));
+  const dataSorted = data.value.sort((a, b) => d3.ascending(a.xAxis, b.xAxis));
 
   switch (data.type) {
     case "line":

@@ -1,4 +1,8 @@
-const drawColumn = (columnArg) => {
+import * as d3 from "d3";
+import { drawBandAxis } from "./bandAxis";
+import { drawLinearAxis } from "./linearAxis";
+
+export const drawColumn = (columnArg) => {
   const xScale = drawBandAxis({
     type: columnArg.type,
     domainArr: columnArg.data.map((d) => d.xAxis),

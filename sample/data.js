@@ -1,4 +1,4 @@
-var line = {
+var lineData = {
   type: "line",
   top: 20,
   bottom: 80,
@@ -31,9 +31,9 @@ var line = {
   ]
 };
 
-var lineChart = draw(line);
+var lineChart = Graph.drawGraph(lineData);
 
-var column = {
+var columnData = {
   type: "column",
   top: 20,
   bottom: 80,
@@ -66,9 +66,9 @@ var column = {
   ]
 };
 
-var columnChart = draw(column);
+var columnChart = Graph.drawGraph(columnData);
 
-var pie = {
+var pieData = {
   type: "pie",
   top: 350,
   bottom: 70,
@@ -101,9 +101,9 @@ var pie = {
   ]
 };
 
-var pieChart = draw(pie);
+var pieChart = Graph.drawGraph(pieData);
 
-var bar = {
+var barData = {
   type: "bar",
   top: 15,
   bottom: 20,
@@ -136,4 +136,4 @@ var bar = {
   ]
 };
 
-var barChart = draw(bar);
+var barChart = Graph.drawGraph(barData);
